@@ -268,15 +268,15 @@ two_student.set_grade(jon_lector, 'Web', 9.9)
 two_student.set_grade(jon_lector, 'Web', 10)
 
 
-institut_grage = Institute()
+institut_grade = Institute()
 student = [best_student, two_student]
 lector = [ed_lector, jon_lector]
 course = 'Python'
 mess_student = f'Средняя оценка студентов на курсе "{course}"'
 mess_lector = f'Средняя оценка преподавателей на курсе "{course}"'
 
-print(f'{mess_student}: {institut_grage.get_average_grade(student, course)}')
-print(f'{mess_lector}: {institut_grage.get_average_grade(lector, course)}')
+print(f'{mess_student}: {institut_grade.get_average_grade(student, course)}')
+print(f'{mess_lector}: {institut_grade.get_average_grade(lector, course)}')
 
 print(f'Сравнение студентов "{two_student.name_to_string()} == {best_student.name_to_string()}" ==> {two_student == best_student}')
 print(two_student)
